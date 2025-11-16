@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DrugBase">
+    <defName>GuldenAmbrosia</defName>
+    <label>Gulden ambrosia</label>
+    <description>A soft, rare fruit. Ambrosia tastes wonderful and produces a subtle mood-increasing chemical high. However, if eaten too often, it can generate a mild addiction.</description>
+    <descriptionHyperlinks>
+      <HediffDef>GuldenAmbrosiaHigh</HediffDef>
+      <HediffDef>AmbrosiaTolerance</HediffDef>
+      <HediffDef>AmbrosiaAddiction</HediffDef>
+    </descriptionHyperlinks>
+    <tradeability>Sellable</tradeability>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <tickerType>Rare</tickerType>
+    <graphicData>
+      <texPath>Item/GuldenAmbrosia</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>23</MarketValue>
+      <Mass>0.1</Mass>
+	  <Beauty>3</Beauty>
+      <BeautyOutdoors>3</BeautyOutdoors>
+      <DeteriorationRate>4</DeteriorationRate>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <baseIngestTicks>80</baseIngestTicks>
+      <chairSearchRadius>4</chairSearchRadius>
+      <preferability>DesperateOnly</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.6</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>GuldenAmbrosiaHigh</hediffDef>
+          <severity>0.50</severity>
+          <toleranceChemical>Ambrosia</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AmbrosiaTolerance</hediffDef>
+          <severity>0.032</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_Drug">
+        <chemical>Ambrosia</chemical>
+        <addictiveness>0.025</addictiveness>
+        <minToleranceToAddict>0.15</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>30</listOrder>
+      </li>
+    </comps>
+    <allowedArchonexusCount>20</allowedArchonexusCount>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>GuldenAmbrosiaHigh</defName>
+    <label>Gulden ambrosia warmth</label>
+    <description>Ambrosia chemicals in the bloodstream. It lifts the mood.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li/>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>GuldenAmbrosiaHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>GuldenAmbrosiaHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Gulden ambrosia warmth</label>
+        <description>That ambrosia makes me feel more relaxed, and gives me energy at the same time.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

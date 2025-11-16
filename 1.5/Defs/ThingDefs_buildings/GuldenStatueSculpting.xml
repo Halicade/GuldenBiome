@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- <WorkGiverDef>
+    <defName>DoBillsSculptGulden</defName>
+    <label>make things at art bench</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Art</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TableSculpting</li>
+    </fixedBillGiverDefs>
+    <verb>sculpt</verb>
+    <gerund>sculpting at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+</WorkGiverDef>
+
+<ThingDef ParentName="SculptureBase">
+    <defName>SculptureMonk</defName>
+    <label>Monk sculpture</label>
+    <description>A torso-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Art/SculptureMonk</texPath>
+    </graphicData>
+    <fillPercent>0.35</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>50</Beauty>
+      <WorkToMake>18000</WorkToMake>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="SculptureBase">
+    <defName>SculptureMonk</defName>
+    <label>Monk sculpture</label>
+    <description>A person-sized piece of material sculpted into an artistic form.</description>
+    <castEdgeShadows>true</castEdgeShadows>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Art/Med/SculptureMonk</texPath>
+      <drawSize>(3,3)</drawSize>
+      <drawOffset>0,0,1</drawOffset>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>7</Mass>
+      <Beauty>100</Beauty>
+      <WorkToMake>30000</WorkToMake>         
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+  </ThingDef> -->
+
+  <ThingDef ParentName="SculptureBase">
+    <defName>SculpturePiller</defName>
+    <label>Piller sculpture</label>
+    <description>A person-sized piece of material sculpted into an artistic form.</description>
+    <castEdgeShadows>true</castEdgeShadows>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Art/Med/SculpturePillar</texPath>
+      <drawSize>(6,6)</drawSize>
+      <drawOffset>0,0,2.07</drawOffset>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>7</Mass>
+      <Beauty>100</Beauty>
+      <WorkToMake>30000</WorkToMake>         <!--  30000 -->
+      <!-- <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance> -->
+    </statBases>
+	<holdsRoof>true</holdsRoof>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+  </ThingDef>
+
+  <!-- <ThingDef ParentName="SculptureBase" MayRequire="SirMashedPotato. ESCP. Sload" >
+    <defName>SculptureSload</defName>
+    <label>Sload sculpture</label>
+    <description>A person-sized piece of material sculpted into an artistic form.</description>
+    <castEdgeShadows>true</castEdgeShadows>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Art/Med/SculptureSload</texPath>
+      <drawSize>(6,6)</drawSize>
+      <drawOffset>0,0,2.07</drawOffset>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <size>(3,3)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>7</Mass>
+      <Beauty>100</Beauty>
+      <WorkToMake>30000</WorkToMake> 
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="SculptureBase">
+    <defName>SculptureGrand</defName>
+    <label>grand sculpture</label>
+    <description>A huge sculpture sized to dominate a room.</description>
+    <castEdgeShadows>true</castEdgeShadows>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/Art/SculptureGrand</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(2,2)</size>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Beauty>400</Beauty>
+      <Mass>28</Mass>
+      <WorkToMake>105000</WorkToMake>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>400</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>GuldenStatueSculpting</defName>
+    <label>art bench</label>
+    <description>A workbench equipped for creating art.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Building/TableSculpting</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.5,1.5)</drawSize>
+      <shadowData>
+        <volume>(2.9, 0.3, 0.5)</volume>
+        <offset>(0, 0, 0)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>75</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <designationHotKey>Misc2</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef> -->
+
+</Defs>

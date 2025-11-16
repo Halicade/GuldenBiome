@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>EldenRim_GuldenAmbrosiaSprout</defName>
+    <label>Gulden ambrosia sprout</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>EldenRim_GuldenForest.IncidentWorker_GuldenAmbrosiaSprout</workerClass>
+    <baseChance>1.0</baseChance>
+    <letterLabel>Gulden ambrosia sprout</letterLabel>
+    <letterText>A grove of the mysterious ambrosia bush has sprouted nearby! If you wait for the plants to grow, you'll be able to harvest the delicious, pleasurable, and slightly addictive fruit.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <allowedBiomes>
+      <li>TemperateGuldenForest</li>
+    </allowedBiomes>
+  </IncidentDef>
+
+</Defs>

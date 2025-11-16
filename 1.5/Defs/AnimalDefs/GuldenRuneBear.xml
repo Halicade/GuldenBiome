@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="RuneBear">
+    <devNote>warg-1</devNote>
+    <statBases>
+      <MoveSpeed>6.5</MoveSpeed>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
+      <MarketValue>4500</MarketValue>
+      <FilthRate>6</FilthRate>
+      <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.30</ArmorRating_Heat>
+      <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+    </statBases>
+    <butcherProducts>
+        <GoldenClaws>2</GoldenClaws>
+    </butcherProducts>
+    <uiIconScale>1.75</uiIconScale>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>25</power>
+        <armorPenetration>0.50</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>25</power>
+        <armorPenetration>0.50</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>32</power>
+        <armorPenetration>0.50</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <armorPenetration>0.50</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <herdAnimal>false</herdAnimal>
+      <predator>true</predator>
+      <maxPreyBodySize>4</maxPreyBodySize>
+      <body>QuadrupedAnimalWithPaws</body>
+      <baseHungerRate>1.50</baseHungerRate>
+      <baseBodySize>5</baseBodySize>
+      <baseHealthScale>10</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>Leather_RuneBear</leatherDef>
+      <gestationPeriodDays>25</gestationPeriodDays>
+      <wildness>0.95</wildness>
+      <lifeExpectancy>30</lifeExpectancy>
+      <trainability>Advanced</trainability>
+      <manhunterOnTameFailChance>0.8</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <willNeverEat>
+        <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+      </willNeverEat>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.5</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>1</minAge>
+          <soundWounded>Pawn_Bear_Injured</soundWounded>
+          <soundDeath>Pawn_Bear_Death</soundDeath>
+          <soundCall>Pawn_Bear_Call</soundCall>
+          <soundAngry>Pawn_Bear_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef Abstract="True" ParentName="AnimalKindBase" Name="RuneBearBase">
+    <combatPower>600</combatPower>
+    <ecoSystemWeight>1</ecoSystemWeight>
+  </PawnKindDef>
+
+
+
+
+  <ThingDef ParentName="RuneBear">
+    <defName>GuldenRuneBear</defName>
+    <label>Gulden Rune Bear</label>
+    <description>Massive omnivorous bear-like creature known for roaming the Gulden Forest. This ancient beast is very territorial and will not hesitate once to shred anything on its path once enraged, or when hunting. Its beautiful pelt is incredibly durable and beautiful, marking it as a good of choices by the empire which regularly hunt them down. His golden razor-sharp claws fetches a good price on the market. Old tribes used to venerate such creature, saying it was a lesser divinity taking animal form to hunt those who have angered the gods.</description>
+    <race>
+      <wildness>0.80</wildness>
+      <useMeatFrom>Bear_Grizzly</useMeatFrom>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RuneBearBase">
+    <defName>GuldenRuneBear</defName>
+    <label>Gulden Rune Bear</label>
+    <race>GuldenRuneBear</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/RuneBear/RuneBear</texPath>
+          <drawSize>1.4</drawSize>
+          <!-- <color>(112,82,65)</color> -->
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/RuneBear/RuneBear_dessicated</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/RuneBear/RuneBear</texPath>
+          <drawSize>2</drawSize>
+          <!-- <color>(112,82,65)</color> -->
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/RuneBear/RuneBear</texPath>
+          <drawSize>4</drawSize>
+          <!-- <color>(112,82,65)</color> -->
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/RuneBear/RuneBear_dessicated</texPath>
+          <drawSize>4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  
+	<IncidentDef>
+		<defName>RuneBearWanderIn</defName>
+		<label>Rune Bear wander In</label>
+        <allowedBiomes><li>TemperateGuldenForest</li></allowedBiomes>
+		<letterLabel>{0} wanders in</letterLabel>	<!-- {0} corresponds to the pawn kind label -->
+		<letterText>A group of {0} {1} have wandered into the area, and will leave after a while. Be warned {1} are no simple foe, and your actions may have consequences.</letterText>	<!-- {0} is the number, {1} is the pawn kind label  -->
+		<letterDef>RuneBearEvent</letterDef> <!-- also ThreatBig, NeutralEvent, PositiveEvent -->
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<baseChance>0.7</baseChance>
+		<minRefireDays>13</minRefireDays>
+		
+		<workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass>	<!-- don't change this -->
+		<modExtensions>
+			<!-- needs this -->
+			<li Class="GenericWandersIn.IncidentProperties">
+				<kindDef>GuldenRuneBear</kindDef>	<!-- the kind to spawn -->
+				<max>1~2</max>	<!-- the maximum number that can spawn -->
+				<leaveMapAfterTime>false</leaveMapAfterTime>	<!-- whether they leave the map after a random amount of time -->
+            </li>
+		</modExtensions>
+		
+	</IncidentDef>
+
+  <LetterDef>
+    <defName>RuneBearEvent</defName>
+    <color>(232, 186, 84)</color>
+    <!-- <flashColor>(106, 179, 231)</flashColor>
+    <flashInterval>90</flashInterval> -->
+    <arriveSound>RitualConclusion_Positive</arriveSound>
+  </LetterDef>
+
+  <ThingDef Abstract="True" Name="RuneBearLeatherBase" ParentName="ResourceBase">
+    <description>A pelt sporting strange  golden runes. Prized by the nobles for its beauty and insulation. it is incredibly durable and has conserved its fruity smell.</description>
+    <graphicData>
+      <texPath>Item/RunicPelt</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Mass>0.03</Mass>
+      <Flammability>1</Flammability>
+      <MarketValue>18.0</MarketValue>
+      <StuffPower_Armor_Sharp>2.12</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.43</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>2</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>42</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+    </statBases>
+    <thingCategories>
+      <li>Leathers</li>
+    </thingCategories>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Leathery</li>
+      </categories>
+      <commonality>0.001</commonality>
+      <statFactors>
+        <MaxHitPoints>2.5</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="RuneBearLeatherBase">
+    <defName>Leather_RuneBear</defName>
+    <label>Runic pelt</label>
+    <description>The strong furry leather of a bear. Compared to most leather, it is quite a bit tougher and a bit better at all kinds of temperature regulation.</description>
+    <!-- <graphicData>
+      <color>(112,82,65)</color>
+    </graphicData> -->
+    <statBases>
+    </statBases>
+    <stuffProps>
+      <color>(139,130,110)</color>
+      <commonality>0.01</commonality>
+      <statFactors>
+        <Beauty>9</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>GoldenClaws</defName>
+    <label>Golden Claws</label>
+    <description>Razor sharp claws, prized for its resistance and gold like texture. This is a true trophy, souvenir of a great hunt which can be turned into a deadly weapon.</description>
+    <graphicData>
+      <texPath>Item/GoldenClaws/GoldenClaws</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>640</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>2.4</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <stackLimit>10</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+</Defs>

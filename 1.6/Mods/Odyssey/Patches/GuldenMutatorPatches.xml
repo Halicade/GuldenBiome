@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--
+	TemperateGuldenForest
+	-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="ArcheanTrees"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="FoggyMutator"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WetClimate"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WindyMutator"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[@Name="BaseLakeMut"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Pond"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Cliffs"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="TerraformingScar"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[@Name="BaseCoastMut"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[@Name="BaseAncientVentMut"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Fertile"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="MixedBiome"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="PlantGrove"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WildPlants"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+ <ResearchProjectDef>
+    <defName>GuldenFauna</defName>
+    <label>gulden planting</label>
+    <description>Sow gulden fauna.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+     <!-- <li>TreeSowing</li>-->
+    </prerequisites>
+	
+  </ResearchProjectDef>
+  
+  </Defs>

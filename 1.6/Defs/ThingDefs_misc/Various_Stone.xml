@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="UglyRockBase" Name="AurelianStoneBase">
+		<defName>AurelianStone</defName>
+		<label>aurelian stone</label>
+		<description>A igneous rock said to have fallen from the heavens.</description>
+		<graphicData>
+			<color>(174,154,118)</color>
+		</graphicData>
+		<statBases>
+			<Beauty>0</Beauty>
+			<MaxHitPoints>1000</MaxHitPoints>
+		</statBases>
+		<building>
+			<mineableThing>ChunkAurelianStone</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+			<smoothedThing>SmoothedAurelianStone</smoothedThing>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="AurelianStoneBase">
+		<defName>SmoothedAurelianStone</defName>
+		<label>smoothed aurelian stone</label>
+		<description>A igneous rock said to have fallen from the heavens. Smoothed to a beautiful sheen.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>3</Beauty>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<building>
+			<isNaturalRock>false</isNaturalRock>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<smoothedThing/>
+		</building>
+		<saveCompressible>false</saveCompressible>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+	
+	<ThingDef ParentName="ChunkRockBase">
+		<defName>ChunkAurelianStone</defName>
+		<label>aurelian stone chunk</label>
+		<graphicData>
+			<color>(174,154,118)</color>
+		</graphicData>
+		<statBases>
+			<Mass>22</Mass>
+		</statBases>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<butcherProducts>
+			<BlocksAurelianStone>20</BlocksAurelianStone>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="StoneBlocksBase">
+		<defName>BlocksAurelianStone</defName>
+		<label>aurelian stone blocks</label>
+		<description>Blocks of solid aurelian stone.</description>
+		<graphicData>
+			<color>(174,154,118)</color>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Mass>1.1</Mass>
+		</statBases>
+		
+		<stuffProps>
+			<statOffsets>
+				<Beauty>2</Beauty>
+			</statOffsets>
+			<color>(174,154,118)</color>
+			<!-- <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>-->
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<stuffAdjective>aurelian stone</stuffAdjective>
+			<statFactors>
+				<Beauty>1.4</Beauty>
+				<MaxHitPoints>1.3</MaxHitPoints>
+				<WorkToBuild>6</WorkToBuild>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+	</ThingDef>
+	
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>Make_StoneBlocksAurelianStone</defName>
+		<label>make aurelian stone blocks</label>
+		<description>Cuts aurelian stone chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkAurelianStone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkAurelianStone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksAurelianStone>20</BlocksAurelianStone>
+		</products>
+	</RecipeDef>
+	
+	<TerrainDef ParentName="TileStoneBase">
+		<defName>TileAurelianStone</defName>
+		<label>aurelian stone tile</label>
+		<color>(174,154,118)</color>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<costList>
+			<BlocksAurelianStone>4</BlocksAurelianStone>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FlagstoneBase">
+		<defName>FlagstoneAurelianStone</defName>
+		<label>aurelian stone flagstone</label>
+		<color>(174,154,118)</color>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<costList>
+			<BlocksAurelianStone>4</BlocksAurelianStone>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="MorbidStoneTile" MayRequire="Ludeon.Rimworld.Ideology">
+		<defName>Tile_MorbidAurelianStone</defName>
+		<label>morbid aurelian stone tile</label>
+		<color>(174,154,118)</color>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<costList>
+			<BlocksAurelianStone>20</BlocksAurelianStone>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="SpikecoreStoneTile" MayRequire="Ludeon.Rimworld.Ideology">
+		<defName>Tile_SpikecoreAurelianStone</defName>
+		<label>aurelian stone spikecore tile</label>
+		<color>(174,154,118)</color>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<costList>
+			<BlocksAurelianStone>20</BlocksAurelianStone>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="TotemicStoneTile" MayRequire="Ludeon.Rimworld.Ideology">
+		<defName>Tile_TotemicAurelianStone</defName>
+		<label>totemic aurelian stone tile</label>
+		<color>(174,154,118)</color>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<costList>
+			<BlocksAurelianStone>20</BlocksAurelianStone>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FineTileStoneBase" MayRequire="Ludeon.Rimworld.Royalty">
+		<defName>FineTileAurelianStone</defName>
+		<label>fine aurelian stone tile</label>
+		<color>(174,154,118)</color>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<costList>
+			<BlocksAurelianStone>20</BlocksAurelianStone>
+		</costList>
+	</TerrainDef>
+
+</Defs>

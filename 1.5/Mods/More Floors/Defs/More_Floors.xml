@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Slabs -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneSlabs">
+    <defName>FloorStoneSlabsAurelian</defName>
+    <label>stone slabs (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>3</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  
+  
+  
+  <!-- Staggered -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneStaggered">
+    <defName>FloorStoneStaggeredAurelian</defName>
+    <label>staggered stone tiles (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>3</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  
+  
+  <!-- Rough -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+    <TerrainDef ParentName="TFloorBaseStoneRough">
+    <defName>FloorStoneRoughAurelian</defName>
+    <label>rough paving (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>2</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  
+  
+  <!-- Alternating -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneAlternating">
+    <defName>FloorStoneAlternatingAurelian</defName>
+    <label>alternating brick paving (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>3</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  
+  
+  
+  <!-- Chequered -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneChequeredSingle">
+    <defName>FloorStoneChequeredAurelian</defName>
+    <label>chequered slabs (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>3</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  
+  
+  
+  <!-- Herringbone -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneHerringbone">
+    <defName>FloorStoneHerringboneAurelian</defName>
+    <label>herringbone paving (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>3</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  
+  
+  
+  <!-- Hexagonal -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneHex">
+    <defName>FloorStoneHexAurelian</defName>
+    <label>hex paving (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>3</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  
+  
+  
+  <!-- Digital -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneDigital">
+    <defName>FloorStoneDigitalAurelian</defName>
+    <label>digital paving (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  
+  
+  
+  <!-- Mosaic -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneMosaic">
+    <defName>FloorStoneMosaicAurelian</defName>
+    <label>mosaic paving (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>5</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  
+  
+  <!-- Random -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneRandom">
+    <defName>FloorStoneRandomAurelian</defName>
+    <label>random paving (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>3</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  
+  
+  <!-- Diamond -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneDiamond">
+    <defName>FloorStoneDiamondAurelian</defName>
+    <label>diamond paving (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>20</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  
+  <!-- Arabesque -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="TFloorBaseStoneArabesque">
+    <defName>FloorStoneArabesqueAurelian</defName>
+    <label>arabesque flooring (aurelian stone)</label>
+    <color>(174,154,118)</color>
+    <costList>
+      <BlocksAurelianStone>20</BlocksAurelianStone>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+    </statBases>
+  </TerrainDef>
+
+
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- Add canCrossBreedWith if no exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Horse"]/race/canCrossBreedWith</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Horse"]/race</xpath>
+			<value>
+				<canCrossBreedWith>
+				
+				</canCrossBreedWith>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Horse"]/race/canCrossBreedWith</xpath>
+		<value>
+			<li>Gulden_Animal_Capricorn</li>
+		</value>
+	</Operation>
+
+</Patch>

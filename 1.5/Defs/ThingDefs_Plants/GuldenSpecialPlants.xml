@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_GuldenAmbrosia</defName>
+    <label>Gulden ambrosia bush</label>
+    <description>A rare wild bush which yields the ambrosia fruit. Ambrosia fruit is delicious and produces a drug-like mood boost. Ambrosia cannot be farmed, which makes wild ambrosia groves very valuable.\n\nIts rarity, beauty, and desirability are why ambrosia was named after the food of the ancient Greek gods.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/GuldenAmbrosia</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.1, 0.2, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <growDays>10</growDays>
+      <immatureGraphicPath>Plants/GuldenAmbrosia_Immature</immatureGraphicPath>
+      <harvestYield>4</harvestYield>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.3</harvestAfterGrowth>
+      <harvestedThingDef>GuldenAmbrosia</harvestedThingDef>
+      <visualSizeRange>0.6~1.1</visualSizeRange>
+      <topWindExposure>0.1</topWindExposure>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <allowAutoCut>false</allowAutoCut>
+    </plant>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Brick Road Floors -->
+<TerrainDef ParentName="OutlandBrickRoadBase">
+    <defName>Outland_BrickRoad_Aurelian</defName>
+    <label>aurelian brick road</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>2</Beauty>
+    </statBases>
+</TerrainDef>
+
+<TerrainDef ParentName="OutlandBrickRoadCrackedBase">
+    <defName>Outland_BrickRoadCracked_Aurelian</defName>
+    <label>aurelian cracked brick road</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>2</Beauty>
+    </statBases>
+</TerrainDef>
+
+<!-- Cobblestone Floors -->
+<TerrainDef ParentName="OutlandCobblestoneBase">
+    <defName>Outland_Cobblestone_Aurelian</defName>
+    <label>aurelian cobblestone</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>2</Beauty>
+      </statBases>
+</TerrainDef>
+
+<TerrainDef ParentName="OutlandCrackedPatternedTilesBase">
+    <defName>Outland_CrackedPatternedTiles_Aurelian</defName>
+    <label>aurelian cracked patterned tiles</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>2</Beauty>
+      </statBases>
+</TerrainDef>
+
+<TerrainDef ParentName="OutlandCrackedTilesBase">
+    <defName>Outland_CrackedTiles_Aurelian</defName>
+    <label>aurelian cracked tiles</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>2</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandCrazyWeaveBase">
+    <defName>Outland_CrazyWeave_Aurelian</defName>
+    <label>aurelian crazy weave</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<TerrainDef ParentName="OutlandCrazyWeaveMultiBase">
+    <defName>Outland_CrazyWeaveMulti_Aurelian</defName>
+    <label>aurelian crazy weave multi</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandSmallTilesBase">
+    <defName>Outland_SmallTiles_Aurelian</defName>
+    <label>aurelian small tiles</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandSmallTilesMultiBase">
+    <defName>Outland_SmallTilesMulti_Aurelian</defName>
+    <label>aurelian small tiles multi</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandSmallTilesMultiTriangleBase">
+    <defName>Outland_SmallTilesMultiTriangle_Aurelian</defName>
+    <label>aurelian small tiles multi gem</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandSmallTilesTriangleBase">
+    <defName>Outland_SmallTilesTriangle_Aurelian</defName>
+    <label>aurelian small tiles gem</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandTilesBase">
+    <defName>Outland_Tiles_Aurelian</defName>
+    <label>aurelian tiles</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandTilesMultiBase">
+    <defName>Outland_TilesMulti_Aurelian</defName>
+    <label>aurelian tiles multi</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandTilesMultiTriangleBase">
+    <defName>Outland_TilesMultiTriangle_Aurelian</defName>
+    <label>aurelian tiles multi gem</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandTilesTriangleBase">
+    <defName>Outland_TilesTriangle_Aurelian</defName>
+    <label>aurelian tiles gem</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandTinyTilesBase">
+    <defName>Outland_TinyTiles_Aurelian</defName>
+    <label>aurelian tiny tiles</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandTinyTilesMultiBase">
+    <defName>Outland_TinyTilesMulti_Aurelian</defName>
+    <label>aurelian tiny tiles multi</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandWeaveBase">
+    <defName>Outland_Weave_Aurelian</defName>
+    <label>aurelian weave</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandWeaveMultiBase">
+    <defName>Outland_WeaveMulti_Aurelian</defName>
+    <label>aurelian weave multi</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandWeaveMultiTriangleBase">
+    <defName>Outland_WeaveMultiTriangle_Aurelian</defName>
+    <label>aurelian weave multi gem</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Fine Floor - Default beauty is 2 -->
+<TerrainDef ParentName="OutlandWeaveTriangleBase">
+    <defName>Outland_WeaveTriangle_Aurelian</defName>
+    <label>aurelian weave gem</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+
+</Defs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+	
+	<EldenRim_GuldenForest_ModName>Elden Rim - Gulden Forest</EldenRim_GuldenForest_ModName>
+	
+	<EldenRim_GuldenForest_Enable_CropEating>Enable wild rabbitgaroos eating sown plants.</EldenRim_GuldenForest_Enable_CropEating>
+	<EldenRim_GuldenForest_Range_CropEating>The radius that rabbitgaroos will notice sown plants within.</EldenRim_GuldenForest_Range_CropEating>
+	
+</LanguageData>

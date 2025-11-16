@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef MayRequire="VanillaExpanded.VBrewE">
+		<defName>VBE_GuldenAmbrosiaMush</defName>
+		<label>make ambrosia mush</label>
+		<description>Make sliced and pressed ambrosia, can be left alone to ripen into must to be further distilled into an extremely fine liquor.</description>
+		<jobString>Making ambrosia mush.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>	
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GuldenAmbrosia</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>GuldenAmbrosia</li>
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>GuldenAmbrosia</li>
+				
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_AmbrandyMush>1</VBE_AmbrandyMush>
+		</products>
+		
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+	
+	
+</Defs>

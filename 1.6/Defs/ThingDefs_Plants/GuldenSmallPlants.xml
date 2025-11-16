@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Grass -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_GuldenGrass</defName>
+		<label>Gulden grass</label>
+		<description>Wild Gulden grass. Grows anywhere there is a little light and minimally fertile ground.</description>
+		<statBases>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.50</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/GuldenGrass</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+			<sowWork>170</sowWork>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			
+			
+			<sowResearchPrerequisites>
+				<li>GuldenFauna</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_GuldenTallGrass</defName>
+		<label>Gulden tall grass</label>
+		<description>Wild tall Gulden grass. Slows down anyone moving over it.</description>
+		<statBases>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.50</Nutrition>
+		</statBases>
+		<pathCost>14</pathCost>
+		<graphicData>
+			<texPath>Plants/GuldenGrass</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.7~0.85</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	
+	<!-- Bushes -->
+	
+	<ThingDef ParentName="BushBase">
+		<defName>Plant_GuldenBush</defName>
+		<label>Gulden Bush</label>
+		<description>A short Gulden shrub.</description>
+		<statBases>
+			<BeautyOutdoors>4</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/GuldenBush</texPath>
+			<drawSize>1.15</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<growDays>3</growDays>
+			<sowWork>400</sowWork>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			
+			<sowResearchPrerequisites>
+				<li>GuldenFauna</li>
+			</sowResearchPrerequisites>
+		
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_GuldenBrambles</defName>
+		<label>Gulden Brambles</label>
+		<description>Tangled, thorny, woody shoots covered with leaves. Brambles grow in clusters, and slow down anyone moving over them. These Gulden brambles are quite pretty.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>0.50</Nutrition>
+		</statBases>
+		<pathCost>14</pathCost>
+		<graphicData>
+			<texPath>Plants/GuldenBrambles</texPath>
+			<drawSize>1.7</drawSize>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<!-- <leaflessGraphicPath>Things/Plant/Brambles_Leafless</leaflessGraphicPath> -->
+			<visualSizeRange>0.7~0.85</visualSizeRange>
+			<topWindExposure>0.15</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<sowWork>400</sowWork>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			
+			<sowResearchPrerequisites>
+				<li>GuldenFauna</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_GuldenBerry</defName>
+		<label>Gulden berry bush</label>
+		<description>A bushy wild plant which yields delicious berries. Berries can be cooked, but they're also good to eat even when raw.</description>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.50</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/GuldenBerry</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>30</pathCost>
+		<plant>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>6</growDays>
+			<!-- <leaflessGraphicPath>Things/Plant/BerryPlant_Leafless</leaflessGraphicPath> -->
+			<immatureGraphicPath>Plants/GuldenBerry_Immature</immatureGraphicPath>
+			<harvestYield>10</harvestYield>
+			<harvestWork>250</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			<harvestedThingDef>GuldenRawBerries</harvestedThingDef>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
+			<visualSizeRange>0.95~1.7</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<sowWork>400</sowWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			
+			<sowResearchPrerequisites>
+				<li>GuldenFauna</li>
+			</sowResearchPrerequisites>
+		
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_GuldenMushroom</defName>
+		<label>Gulden Mushroom</label>
+		<description>A small mushroom, typically found in Gulden forests. The flesh is actually rather delicious, even when eaten raw.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/GuldenMushroom</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<plant>
+			<harvestYield>3</harvestYield>
+			<harvestWork>50</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>GuldenRawFungus</harvestedThingDef>
+			
+			<cavePlant>false</cavePlant>
+			<fertilityMin>0.5</fertilityMin>
+			<growMinGlow>-0</growMinGlow>
+			<growOptimalGlow>0.9</growOptimalGlow>
+			<growDays>3.8</growDays>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>6</wildClusterRadius>
+			<wildClusterWeight>20</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<sowWork>400</sowWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			
+			<sowResearchPrerequisites>
+				<li>GuldenFauna</li>
+			</sowResearchPrerequisites>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(244,199,89,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase" Name="GuldenHealrootBase" Abstract="True">
+		<statBases>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/GuldenHealRoot</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<growDays>10</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestWork>400</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>MedicineGuldenHerbal</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<topWindExposure>0.1</topWindExposure>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<allowAutoCut>false</allowAutoCut>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="GuldenHealrootBase">
+		<defName>Plant_GuldenHealroot</defName>
+		<label>Gulde healroot</label>
+		<description>A slow-growing plant which yields herbal medicine when harvested. Sowing and harvesting healroot are both very labor-intensive tasks because of its delicate shoots.\n\nHealroot was selectively bred for centuries by settlers. It is sometimes also called &quot;healer's hand&quot; by tribespeople - a nickname it owes to its five major medicinal virtues.</description>
+		<plant>
+			<growDays>7</growDays>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			
+			<sowResearchPrerequisites>
+				<li>GuldenFauna</li>
+			</sowResearchPrerequisites>
+			<purpose>Health</purpose>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="GuldenHealrootBase">
+		<defName>Plant_GuldenHealrootWild</defName>
+		<label>wild healroot</label>
+		<description>A slow-growing plant which yields herbal medicine when harvested.\n\nThis wild breed of healroot is hardier than domesticated healroot, but too difficult to cultivate. It is prized by tribespeople in colder climates.</description>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>80</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_GuldenLily</defName>
+		<label>Gulden Lily</label>
+		<description>A delicate water lily.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>8</Beauty>
+			<BeautyOutdoors>8</BeautyOutdoors>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/GuldenLily</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.3~0.4</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+			<sowWork>750</sowWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Decorative</li>
+			</sowTags>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_GuldenFern</defName>
+		<label>Gulden fern</label>
+		<description>A small golden fern.</description>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>3</pathCost>
+		<graphicData>
+			<texPath>Plants/GuldenFern</texPath>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>0.95~1.15</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>40</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<sowTags>
+				<li>Ground</li>
+				<li>Decorative</li>
+			</sowTags>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+
+</Defs>

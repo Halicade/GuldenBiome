@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GuldenMod_Ursine</defName>
+		<tier>1</tier>
+		<itemProduced>GR_UrsineGenetic</itemProduced>
+		<extractableAnimals>
+			<li>GuldenRuneBear</li>
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	
+	
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GuldenMod_Equine</defName>
+		<tier>2</tier>
+		<itemProduced>GR_EquineGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Gulden_Animal_Capricorn</li>
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GuldenMod_Rodent</defName>
+		<tier>1</tier>
+		<itemProduced>GR_RodentGenetic</itemProduced>
+		<extractableAnimals>
+			<li>GuldenRabbitgaroo</li>
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+</Defs>

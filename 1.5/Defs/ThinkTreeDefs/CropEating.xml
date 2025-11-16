@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThinkTreeDef>
+		<defName>EldenRim_GuldenForest_RabbitgaroosCropEating</defName>
+		<insertTag>Animal_PreMain</insertTag>
+		<insertPriority>5</insertPriority>
+		
+		<thinkRoot Class="ThinkNode_ChancePerHour_Constant">
+			<mtbHours>0.1</mtbHours>	<!-- Change based on how rare you want it -->
+			<subNodes>
+		
+				<li Class="EldenRim_GuldenForest.ThinkNode_ConditionalCropEating">
+					<pawnKind>Hare</pawnKind>	<!-- Change to proper defName -->
+					<subNodes>
+					
+						<li Class="ThinkNode_Tagger">
+						  <tagToGive>SatisfyingNeeds</tagToGive>
+						  <subNodes>
+							<li Class="EldenRim_GuldenForest.JobGiver_EatCrops"/>
+						  </subNodes>
+						</li>
+						
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+</Defs>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="BaseRabbitgaroo">
+    <devNote>squirrel-1</devNote>
+    <statBases>
+      <MoveSpeed>6.0</MoveSpeed>
+      <MarketValue>50</MarketValue>
+      <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+    </statBases>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3.4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <baseBodySize>0.2</baseBodySize>
+      <baseHungerRate>0.115</baseHungerRate>
+      <baseHealthScale>0.4</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Light</leatherDef>
+      <wildness>0.75</wildness>
+      <trainability>None</trainability>
+      <petness>0.08</petness>
+      <mateMtbHours>8</mateMtbHours>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
+      <gestationPeriodDays>5.661</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(1.0, 0)</li>
+          <li>(1.5, 1)</li>
+          <li>(2.0, 1)</li>
+          <li>(2.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>8</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.1</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2222</minAge>
+          <soundWounded>Pawn_Hare_Wounded</soundWounded>
+          <soundDeath>Pawn_Hare_Death</soundDeath>
+          <soundCall>Pawn_Hare_Call</soundCall>
+          <soundAngry>Pawn_Hare_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef Abstract="True" ParentName="AnimalKindBase" Name="RabbitgarooBase">
+    <combatPower>33</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+  </PawnKindDef>
+
+  <!--================================================ -->
+
+  <ThingDef ParentName="BaseRabbitgaroo">
+    <defName>GuldenRabbitgaroo</defName>
+    <label>Rabbitgaroo</label>
+    <description>Benevolent little creatures hopping through the wilderness of the gulden forest, the rabbitgaroos are issued from genetic experiments conducted on rabbits who then escaped into the wild. Faster than their cousin, they often flee at the first sight of danger making for a hard catch. Rarely hunted they quickly became a pest for the local farms, feasting on their crops and quickly disappearing.</description>
+    <uiIconScale>1.5</uiIconScale>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RabbitgarooBase">
+    <defName>GuldenRabbitgaroo</defName>
+    <label>Rabbitgaroo</label>
+    <race>GuldenRabbitgaroo</race>
+    <alternateGraphicChance>1</alternateGraphicChance>
+          <alternateGraphics>
+            <li><color>(248,248,248)</color></li>
+            <li><color>(86,82,79)</color></li>
+            <li><color>(128,134,109)</color></li>
+            <li><color>(108,91,65)</color></li>
+            <li><color>(250,247,232)</color></li>
+          </alternateGraphics>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/Rabbitgaroo/Rabbitgaroo</texPath>
+          <drawSize>0.8</drawSize>
+          <color>(130,127,106)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/Rabbitgaroo/Rabbitgaroo_dessicated</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/Rabbitgaroo/Rabbitgaroo</texPath>
+          <drawSize>1.0</drawSize>
+          <color>(130,127,106)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/Rabbitgaroo/Rabbitgaroo_dessicated</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/Rabbitgaroo/Rabbitgaroo</texPath>
+          <drawSize>1.2</drawSize>
+          <color>(130,127,106)</color>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/Rabbitgaroo/Rabbitgaroo_dessicated</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!--================================================ -->
+  
+</Defs>

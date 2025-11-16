@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase" Name="GildedBloomBase" Abstract="True">
+    <statBases>
+      <BeautyOutdoors>2</BeautyOutdoors>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/GildedBloom</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <plant>
+      <growDays>10</growDays>
+      <dieIfLeafless>false</dieIfLeafless>
+      <harvestWork>400</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>GildedBloomRaw</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.4~1</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <allowAutoCut>false</allowAutoCut>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="GildedBloomBase">
+    <defName>Gulden_Plant_GildedBloom</defName>
+    <label>GildedBloom</label>
+    <description>A very fragile and beautiful golden flower, engineered to be part of a large terraforming program who turned wild. The petals can be harvested and processed into a gel-like elixir which beside his healing properties it also rapidly develops a dependence on the user. Taking a very long to time and needing a mild temperature in order to bloom, adding that to the addiction problem it quickly became a rarity.</description>
+    <plant>
+      <growDays>7</growDays>
+      <!-- <maxMeshCount>4</maxMeshCount> -->
+      <sowWork>800</sowWork>
+      <sowMinSkill>8</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <purpose>Health</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="GildedBloomBase">
+    <defName>Gulden_Plant_GildedBloomWild</defName>
+    <label>wild GildedBloom</label>
+    <description>A very fragile and beautiful golden flower, engineered to be part of a large terraforming program who turned wild. The petals can be harvested and processed into a gel-like elixir which beside his healing properties it also rapidly develops a dependence on the user. Taking a very long to time and needing a mild temperature in order to bloom, adding that to the addiction problem it quickly became a rarity.</description>
+    <neverMultiSelect>false</neverMultiSelect>
+    <plant>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>40</wildClusterWeight>
+    </plant>
+  </ThingDef>
+
+</Defs>

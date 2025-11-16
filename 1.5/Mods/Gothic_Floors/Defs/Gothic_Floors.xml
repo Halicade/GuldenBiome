@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Regular Gothic -->
+    <TerrainDef ParentName="GothicDimondsTile">
+        <defName>Tile_DimondAurelian</defName>
+        <label>Dimond vertical aurelian tile</label>
+        <color>(174,154,118)</color>
+        <costList>
+            <BlocksAurelianStone>20</BlocksAurelianStone>
+        </costList>
+        <statBases>
+            <Beauty>4</Beauty>
+        </statBases>
+      </TerrainDef>
+
+    <TerrainDef ParentName="GothicRosetteTile">
+        <defName>Tile_RosetteAurelian</defName>
+        <label>Rosette aurelian tile</label>
+        <color>(174,154,118)</color>
+        <costList>
+            <BlocksAurelianStone>20</BlocksAurelianStone>
+        </costList>
+        <statBases>
+            <Beauty>4</Beauty>
+        </statBases>
+    </TerrainDef>
+
+    <TerrainDef ParentName="GothicSmallStarsTile">
+        <defName>Tile_SmallStarsAurelian</defName>
+        <label>Small Stars aurelian tile</label>
+        <color>(174,154,118)</color>
+        <costList>
+            <BlocksAurelianStone>20</BlocksAurelianStone>
+        </costList>
+        <statBases>
+            <Beauty>4</Beauty>
+        </statBases>
+    </TerrainDef>
+
+    <TerrainDef ParentName="GothicStarsTile">
+        <defName>Tile_StarsAurelian</defName>
+        <label>Stars aurelian tile</label>
+        <color>(174,154,118)</color>
+        <costList>
+            <BlocksAurelianStone>20</BlocksAurelianStone>
+        </costList>
+        <statBases>
+            <Beauty>4</Beauty>
+        </statBases>
+    </TerrainDef>
+
+    <!-- Bloody Gothic -->
+    <TerrainDef ParentName="BloodyGothicDimondsTile">
+        <defName>Tile_bloodyDimondAurelian</defName>
+        <label>Dimond vertical aurelian tile</label>
+        <color>(174,154,118)</color>
+        <costList>
+            <BlocksAurelianStone>20</BlocksAurelianStone>
+        </costList>
+        <statBases>
+            <Beauty>4</Beauty>
+        </statBases>
+      </TerrainDef>
+
+    <TerrainDef ParentName="BloodyGothicRosetteTile">
+        <defName>Tile_BloodyRosetteAurelian</defName>
+        <label>Rosette aurelian tile</label>
+        <color>(174,154,118)</color>
+        <costList>
+            <BlocksAurelianStone>20</BlocksAurelianStone>
+        </costList>
+        <statBases>
+            <Beauty>4</Beauty>
+        </statBases>
+    </TerrainDef>
+
+    <TerrainDef ParentName="BloodyGothicSmallStarsTile">
+        <defName>Tile_BloodySmallStarsAurelian</defName>
+        <label>Small Stars aurelian tile</label>
+        <color>(174,154,118)</color>
+        <costList>
+            <BlocksAurelianStone>20</BlocksAurelianStone>
+        </costList>
+        <statBases>
+            <Beauty>4</Beauty>
+        </statBases>
+    </TerrainDef>
+
+    <TerrainDef ParentName="BloodyGothicStarsTile">
+        <defName>Tile_BloodyStarsAurelian</defName>
+        <label>Stars aurelian tile</label>
+        <color>(174,154,118)</color>
+        <costList>
+            <BlocksAurelianStone>20</BlocksAurelianStone>
+        </costList>
+        <statBases>
+            <Beauty>4</Beauty>
+        </statBases>
+    </TerrainDef>
+
+
+</Defs>

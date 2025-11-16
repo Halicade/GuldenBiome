@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Cobblestone Floor -->
+<TerrainDef ParentName="CobblestoneBase">
+    <defName>GU_VFEArch_CobblestoneFloorAurelian</defName>
+    <label>aurelian cobblestone floor</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>4</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>1</Beauty>
+      </statBases>
+</TerrainDef>
+<!--Polished Stone Tiles-->
+<TerrainDef ParentName="PolishedStoneFloorBase">
+<defName>GU_VFEArch_PolishedStoneFloorAurelian</defName>
+<label>aurelian polished stone floor</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>12</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>3</Beauty>
+      </statBases>
+</TerrainDef>
+<!--Stone Slabs-->
+<TerrainDef ParentName="StoneSlabsBase">
+    <defName>GU_VFEArch_SlabsAurelian</defName>
+    <label>aurelian slabs</label>
+    <color>(174,154,118)</color>
+    <costList>
+        <BlocksAurelianStone>8</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>4</Beauty>
+      </statBases>
+</TerrainDef>
+
+<!-- Stone bridge -->
+<TerrainDef ParentName="StoneBridgeBase">
+    <defName>VFEArch_BridgeAurelian</defName>
+    <label>aurelian bridge</label>
+    <color>(174,154,118)</color>
+	<uiIconPath>StoneBridge/StoneBridge_MenuIcon</uiIconPath>
+    <costList>
+        <BlocksAurelianStone>12</BlocksAurelianStone>
+    </costList>
+    <statBases>
+        <Beauty>2</Beauty>
+      </statBases>
+  </TerrainDef>
+
+</Defs>

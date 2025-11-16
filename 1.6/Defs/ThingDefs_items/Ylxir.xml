@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>Elden_Rim_Ylxir</defName>
+		<label>ylxir</label>
+		<description>A drug known as 'Midas cure' is a gel-like liquid processed from the petals of the gilded bloom, a soothing medicinal drug which was used by the church to cure and heal their followers. It was later found that the plant could quickly develop and addiction and was then dispatched and classified as an illegal good by the interplanetary empire.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Elden_Rim_YlxirHigh</HediffDef>
+			<HediffDef>Elden_Rim_YlxirTolerance</HediffDef>
+			<HediffDef>Elden_Rim_YlxirAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Item/Ylxir</texPath> <!-- Change -->
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>530</WorkToMake>
+			<MarketValue>21</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<stackLimit>75</stackLimit>
+		<minRewardCount>10</minRewardCount>
+		<ingestible>
+			<foodType>Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.20</joy>
+			<drugCategory>Hard</drugCategory>
+			<baseIngestTicks>100</baseIngestTicks>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Ingest {0}</ingestCommandString>
+			<ingestReportString>Ingesting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.1</offset>
+					<toleranceChemical>Elden_Rim_Ylxir</toleranceChemical>
+				</li>
+				
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus" MayRequire="Ludeon.RimWorld.Royalty">
+					<offset>0.1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Elden_Rim_YlxirHigh</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>Elden_Rim_Ylxir</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Elden_Rim_YlxirTolerance</hediffDef>
+					<severity>0.040</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<!-- <researchPrerequisite>Elden_Rim_YlxirRefining</researchPrerequisite> CHANGE -->
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+		<costList>
+			<GildedBloomRaw>15</GildedBloomRaw>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Elden_Rim_Ylxir</chemical>
+				<addictiveness>0.084</addictiveness>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>100</listOrder>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+				<largeOverdoseChance>0.01</largeOverdoseChance>
+			</li>
+		</comps>
+		<allowedArchonexusCount>200</allowedArchonexusCount>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>Elden_Rim_YlxirHigh</defName>
+		<label>high on ylxir</label>
+		<labelNoun>a ylxir high</labelNoun>
+		<description>Active ylxir in the bloodstream.</description> <!-- Change -->
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>0.90</restFallFactor>
+				<statOffsets>
+					<InjuryHealingFactor>1.6</InjuryHealingFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.40</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.35</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>Elden_Rim_YlxirHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Elden_Rim_YlxirHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>high on ylxir</label>
+				<description>the bliss is unimaginable</description> <!-- Change -->
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Elden_Rim_Ylxir addiction -->
+	
+	<ChemicalDef>
+		<defName>Elden_Rim_Ylxir</defName>
+		<label>ylxir</label>
+		<addictionHediff>Elden_Rim_YlxirAddiction</addictionHediff>
+		<toleranceHediff>Elden_Rim_YlxirTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+		<generateAddictionGenes>false</generateAddictionGenes>
+	</ChemicalDef>
+	
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Chemical_Elden_Rim_Ylxir</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>ylxir</label>
+		<description>Because of a ylxir addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+		<listPriority>50</listPriority>
+	</NeedDef>
+	
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>Elden_Rim_YlxirTolerance</defName>
+		<label>ylxir tolerance</label>
+		<description>A built-up tolerance to ylxir. The more severe this tolerance is, the more ylxir it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.015</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>Elden_Rim_Ylxir</chemical>
+			</li>
+		</comps>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>ChemicalDamageModerate</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.45, 99999)</li>
+						<li>(0.5, 120)</li>
+						<li>(1, 90)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Brain</li>
+				</partsToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+	
+	<HediffDef ParentName="AddictionBase">
+		<defName>Elden_Rim_YlxirAddiction</defName>
+		<label>ylxir addiction</label>
+		<description>A chemical addiction to ylxir. Long-term presence of ylxir has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug. \nWithout regular doses of ylxir, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<chemicalNeed>Chemical_Elden_Rim_Ylxir</chemicalNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.0333</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li></li>
+			<li>
+				<label>withdrawal</label>
+				<restFallFactorOffset>0.3</restFallFactorOffset>
+				<socialFightChanceFactor>3.0</socialFightChanceFactor>
+				<painFactor>4</painFactor>
+				<restFallFactor>1.35</restFallFactor>
+				<statOffsets>
+					<InjuryHealingFactor>-0.2</InjuryHealingFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.10</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.40</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Binging_DrugExtreme</mentalState>
+						<mtbDays>40</mtbDays>
+					</li>
+					<li>
+						<mentalState>Wander_Psychotic</mentalState>
+						<mtbDays>10</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>Elden_Rim_YlxirWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Elden_Rim_YlxirAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>ylxir withdrawal</label>
+				<description>I NEED IT. FAST.</description> <!-- Change -->
+				<baseMoodEffect>-22</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

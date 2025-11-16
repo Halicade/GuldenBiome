@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Clean Textures</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/BiomeDef[defName = "TemperateGuldenForest"]/terrainsByFertility</xpath>
+			<value>
+				
+				<terrainsByFertility>
+					<li>
+						<terrain>Gulden_Soil</terrain>
+						<min>-999</min>
+						<max>0.87</max>
+					</li>
+					<li>
+						<terrain>SoilRich</terrain>
+						<min>0.87</min>
+						<max>999</max>
+					</li>
+				</terrainsByFertility>
+			
+			</value>
+		
+		</match>
+	</Operation>
+
+</Patch>
