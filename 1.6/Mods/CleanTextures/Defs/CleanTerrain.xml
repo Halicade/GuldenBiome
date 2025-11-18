@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--
+	Clean Textures changes the base game soil to a green color.
+	This makes Gulden biome look completely different. 
+	Changing back to base game soil to fix.
 	
-	<TerrainDef ParentName="NaturalTerrainBase" MayRequire="IH.Clean.Textures">
+	Mod extension is for natures pretty sweet so it gets soil changing effects
+	-->
+	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>Gulden_Soil</defName>
 		<label>soil</label>
 		<texturePath>Terrain/GuldenGrass</texturePath>
@@ -39,6 +45,19 @@
 		<tags>
 			<li>Soil</li>
 		</tags>
+		<modExtensions>
+			<li Class="TKKN_NPS.TerrainWeatherReactions" MayRequire="mlie.naturesprettysweet">
+				<tideTerrain />
+				<floodTerrain />
+				<wetTerrain>TKKN_SoilWet</wetTerrain>
+				<freezeTerrain />
+				<freezeAt />
+				<wetAt>0</wetAt>
+				<isSalty>False</isSalty>
+				<holdFrost>True</holdFrost>
+				<dryTerrain />
+			</li>
+		</modExtensions>
 	</TerrainDef>
 
 

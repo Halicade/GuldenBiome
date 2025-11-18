@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Patch>
 	
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Clean Textures</li>
-		</mods>
-		<match Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 			<xpath>Defs/BiomeDef[defName = "TemperateGuldenForest"]/terrainsByFertility</xpath>
 			<value>
 				
@@ -22,10 +17,7 @@
 						<max>999</max>
 					</li>
 				</terrainsByFertility>
-			
 			</value>
-		
-		</match>
 	</Operation>
 
 </Patch>

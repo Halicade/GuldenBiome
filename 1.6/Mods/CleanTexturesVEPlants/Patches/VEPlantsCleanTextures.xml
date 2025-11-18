@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+    <!---
+    VE plants has a custom def to determine what soils can be tilled. 
+    Need to add below to that list when clean textures is active
+    -->
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/VanillaPlantsExpanded.TillableTerrainDef[defName = "VCE_AcceptedTillableTerrains"]/terrains</xpath>
+        <value>
+            <li>Gulden_Soil</li>
+        </value>
+    </Operation>
+
+</Patch>
