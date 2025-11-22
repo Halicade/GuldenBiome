@@ -6,7 +6,7 @@
 		<label>temperate Gulden forest</label>
 		<description>Forests of Gulden trees interspersed with fertile clearings. Many species of animals move around among the trees and on the plains.</description>
 		<workerClass>GuldenBiome.BiomeWorker</workerClass>
-		
+		<extraRockTypes/>
 		<modExtensions>
 			<li Class="BiomesKit.BiomesKitControls" MayRequireAnyOf="zal.wmbp,regrowth.botr.core">
 				<!--

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="GuldenBiome.LockAurelianPatch">
+        <xpath>Defs/ThingDef[defName="AurelianStone"]/building</xpath>
+        <value>
+            <biomeSpecific>True</biomeSpecific>
+        </value>
+    </Operation>
+    	
+    <Operation Class="GuldenBiome.LockAurelianPatch">
+        <xpath>Defs/BiomeDef[defName="TemperateGuldenForest"]/extraRockTypes</xpath>
+        <value>
+            <li>AurelianStone</li>
+        </value>
+    </Operation>
+
+</Patch>

@@ -14,7 +14,7 @@ If the original author requests it, I will remove this update.
 
 Adds Foliage fit for gods.
 	</description>
-	<modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">1.6.3</modVersion>
 	<modDependenciesByVersion>
 		<v1.5>
 			<li>

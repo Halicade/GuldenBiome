@@ -31,6 +31,8 @@ internal class EldenRim_GuldenForest_Mod : Mod
             (int)Math.Round(listing_Standard.Slider(settings.EldenRim_GuldenForest_Range_CropEating, 1f, 100f));
         listing_Standard.Gap();
         listing_Standard.GapLine();
+        listing_Standard.CheckboxLabeled("EldenRim_GuldenForest_LockAurelianStone".Translate(),
+            ref settings.EldenRim_GuldenForest_LockAurelian,tooltip:"EldenRim_GuldenForest_LockAurelianStoneTip".Translate());
         listing_Standard.Gap();
         listing_Standard.End();
         base.DoSettingsWindowContents(inRect);

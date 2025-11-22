@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<LanguageData
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+<LanguageData>
 	
 	<EldenRim_GuldenForest_ModName>Elden Rim - Gulden Forest</EldenRim_GuldenForest_ModName>
 	
 	<EldenRim_GuldenForest_Enable_CropEating>Enable wild rabbitgaroos eating sown plants.</EldenRim_GuldenForest_Enable_CropEating>
 	<EldenRim_GuldenForest_Range_CropEating>The radius that rabbitgaroos will notice sown plants within.</EldenRim_GuldenForest_Range_CropEating>
+    
+	<EldenRim_GuldenForest_LockAurelianStone>Aurelian Stone only appears on Gulden Biome (Requires restart)</EldenRim_GuldenForest_LockAurelianStone>
+    <EldenRim_GuldenForest_LockAurelianStoneTip>Note: Not all tiles will have Aurelien Stone.\nTurning this setting on mid-game can change a maps current stone chunks but should not otherwise impact it.</EldenRim_GuldenForest_LockAurelianStoneTip>
 	
 </LanguageData>

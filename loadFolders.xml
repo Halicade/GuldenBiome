@@ -20,7 +20,7 @@
         <li IfModActive="Ludeon.Rimworld.Odyssey">1.6/Mods/Odyssey</li>
 		<li IfModActive="zal.wmbp,regrowth.botr.core">WMBP</li>
 		<li IfModActive="vanillaexpanded.vgeneticse">1.6/Mods/GeneticsExpanded</li>
-		<li IfModActive="vanillaexpanded.vcef" IfModNotActive="Ludeon.Rimworld.Odyssey">1.5/Mods/FishingExpanded</li>
+		<li IfModActive="vanillaexpanded.vcef" IfModNotActive="Ludeon.Rimworld.Odyssey">1.6/Mods/FishingExpanded</li>
         <li IfModActive="IH.Clean.Textures">1.6/Mods/CleanTextures</li>
 		<li IfModActiveAll="IH.Clean.Textures,vanillaexpanded.vplantse">1.6/Mods/CleanTexturesVEPlants</li>
 	</v1.6>

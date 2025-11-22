@@ -10,9 +10,13 @@ internal class EldenRim_GuldenForest_ModSettings : ModSettings
 
     public float EldenRim_GuldenForest_Range_CropEating = 50f;
 
+    public bool EldenRim_GuldenForest_LockAurelian = false;
+
     public static bool Enable_CropEating => _instance.EldenRim_GuldenForest_Enable_CropEating;
 
     public static float Range_CropEating => _instance.EldenRim_GuldenForest_Range_CropEating;
+
+    public static bool LockAurelian => _instance.EldenRim_GuldenForest_LockAurelian;
 
     public EldenRim_GuldenForest_ModSettings() {
         _instance = this;
@@ -23,5 +27,7 @@ internal class EldenRim_GuldenForest_ModSettings : ModSettings
         Scribe_Values.Look(ref EldenRim_GuldenForest_Enable_CropEating, "EldenRim_GuldenForest_Enable_CropEating",
             defaultValue: true);
         Scribe_Values.Look(ref EldenRim_GuldenForest_Range_CropEating, "EldenRim_GuldenForest_Range_CropEating", 50f);
+        Scribe_Values.Look(ref EldenRim_GuldenForest_LockAurelian, "EldenRim_GuldenForest_LockAurelian",
+            defaultValue: false);
     }
 }
