@@ -5,6 +5,11 @@
 		<defName>Gulden_Rat</defName>
 		<label>gulden rat</label>
 		<description>A lustrous rodent that traverses through the forest undergrowth, blending in with the fallen golden leaves to avoid predators. Members of high society often seek them out as pets and status symbols due to their glistening fur and elusive nature. Originally created as part of a cosmetic bioengineering project, gulden rats managed to spread across the galaxy via a cycle of being purchased, reproducing, and sold through trade ships. Despite their skittishness, they typically have a gentle temperament, making them ideal companions.</description>
+		<race>
+			<canCrossBreedWith>
+				<li>Rat</li>
+			</canCrossBreedWith>
+		</race>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">

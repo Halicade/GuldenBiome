@@ -4,7 +4,7 @@
 	<ThingDef ParentName="DrugBase">
 		<defName>GuldenAmbrosia</defName>
 		<label>Gulden ambrosia</label>
-		<description>A soft, rare fruit. Ambrosia tastes wonderful and produces a subtle mood-increasing chemical high. However, if eaten too often, it can generate a mild addiction.</description>
+		<description>A soft, rare fruit. Gulden Ambrosia tastes wonderful and produces a subtle mood-increasing chemical high. However, if eaten too often, it can generate a mild addiction.</description>
 		<descriptionHyperlinks>
 			<HediffDef>GuldenAmbrosiaHigh</HediffDef>
 			<HediffDef>AmbrosiaTolerance</HediffDef>

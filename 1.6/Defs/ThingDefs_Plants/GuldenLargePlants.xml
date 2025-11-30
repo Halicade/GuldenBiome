@@ -6,7 +6,7 @@
 	<ThingDef ParentName="TreeBase">
 		<defName>Plant_SmallGuldenTree</defName>
 		<label>Small Gulden Tree</label>
-		<description>A large conifer covered with prickly pine cones. It grows in a distinctive conical shape.</description>
+		<description>A small tree with beautiful golden colored leaves year-round.</description>
 		<graphicData>
 			<texPath>Plants/SmallGuldenTree</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -32,7 +32,7 @@
 	<ThingDef ParentName="TreeBase">
 		<defName>Plant_GuldenShrub</defName>
 		<label>Gulden Shrub</label>
-		<description>A large conifer covered with prickly pine cones. It grows in a distinctive conical shape.</description>
+		<description>A large bush with gulden colored leaves year-round.</description>
 		<graphicData>
 			<texPath>Plants/GuldenShrub</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -59,7 +59,7 @@
 	<ThingDef ParentName="TreeBase">
 		<defName>Plant_GuldenConifer</defName>
 		<label>Gulden Conifer</label>
-		<description>A large conifer covered with prickly pine cones. It grows in a distinctive conical shape.</description>
+		<description>A large conifer covered with prickly pine cones and beautiful golden colored leaves year-round. It grows in a distinctive conical shape.</description>
 		<graphicData>
 			<texPath>Plants/GuldenConifer</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

@@ -30,7 +30,7 @@
 	<ThingDef ParentName="GildedBloomBase">
 		<defName>Gulden_Plant_GildedBloom</defName>
 		<label>GildedBloom</label>
-		<description>A very fragile and beautiful golden flower, engineered to be part of a large terraforming program who turned wild. The petals can be harvested and processed into a gel-like elixir which beside his healing properties it also rapidly develops a dependence on the user. Taking a very long to time and needing a mild temperature in order to bloom, adding that to the addiction problem it quickly became a rarity.</description>
+		<description>A fragile yet beautiful golden flower. Engineered as part of a large terraforming program that turned wild. Its petals can be harvested and processed into a gel-like elixir which in addition to healing properties, it also rapidly develops a dependence on the user. It takes a very long time to grow and needs a mild temperature in order to bloom. Adding to that the addiction problem, GildedBloom quickly became a rarity.</description>
 		<plant>
 			<growDays>7</growDays>
 			<!-- <maxMeshCount>4</maxMeshCount> -->
@@ -47,7 +47,7 @@
 	<ThingDef ParentName="GildedBloomBase">
 		<defName>Gulden_Plant_GildedBloomWild</defName>
 		<label>wild GildedBloom</label>
-		<description>A very fragile and beautiful golden flower, engineered to be part of a large terraforming program who turned wild. The petals can be harvested and processed into a gel-like elixir which beside his healing properties it also rapidly develops a dependence on the user. Taking a very long to time and needing a mild temperature in order to bloom, adding that to the addiction problem it quickly became a rarity.</description>
+		<description>A fragile yet beautiful golden flower. Engineered as part of a large terraforming program that turned wild. Its petals can be harvested and processed into a gel-like elixir which in addition to healing properties, it also rapidly develops a dependence on the user. It takes a very long time to grow and needs a mild temperature in order to bloom. Adding to that the addiction problem, GildedBloom quickly became a rarity.</description>
 		<neverMultiSelect>false</neverMultiSelect>
 		<plant>
 			<wildClusterRadius>4</wildClusterRadius>

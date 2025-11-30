@@ -88,7 +88,7 @@
 	<ThingDef ParentName="BaseRabbitgaroo">
 		<defName>GuldenRabbitgaroo</defName>
 		<label>Rabbitgaroo</label>
-		<description>Benevolent little creatures hopping through the wilderness of the gulden forest, the rabbitgaroos are issued from genetic experiments conducted on rabbits who then escaped into the wild. Faster than their cousin, they often flee at the first sight of danger making for a hard catch. Rarely hunted they quickly became a pest for the local farms, feasting on their crops and quickly disappearing.</description>
+		<description>Benevolent little creatures hopping through the wilderness of the gulden forest. The rabbitgaroos are the result of genetic experiments conducted on rabbits that escaped into the wild. Faster than their cousin, they often flee at the first sight of danger making for a hard catch. Rarely hunted they quickly became a pest for local farms, feasting on their crops and quickly disappearing.</description>
 		<uiIconScale>1.5</uiIconScale>
 	</ThingDef>
 	

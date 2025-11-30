@@ -26,7 +26,7 @@
 		<defName>GuldenSheep</defName>
 		<label>Gulden sheep</label>
 		<devNote>sheep</devNote>
-		<description>Gulden Sheep Do not exist outside of the Gulden biome. Domestic sheep are relatively small herbivores, usually with yellowish wool and medium sized horns. Gulden Sheep are said to be a gift from the gods for its beautifull wool.</description>
+		<description>Gulden Sheep do not exist outside of the Gulden biome. They are relatively small herbivores, usually with yellowish wool and medium-sized horns. Gulden Sheep are said to be a gift from the gods for its beautiful wool.</description>
 		<statBases>
 			<MoveSpeed>4.8</MoveSpeed>
 			<MarketValue>400</MarketValue>

@@ -5,7 +5,7 @@
 		<defName>Gulden_Animal_Capricorn</defName>
 		<label>Capricorn</label>
 		<devNote>cow-1</devNote>
-		<description>Wooly and horned horses bred for colder climates, the capricorns are gentle by nature but if provoked they can quickly turn a situation around. Slightly slower than regular horses, they make up for that by adapting to any terrain,hopping from cliff to cliff, traversing snowy plains or escpaping hunters.Wild capricorns are mostly seen around the gulden forest, where they regroup to feast and hibernate.</description>
+		<description>Capricorns are wooly, horned horses bred for colder climates. They are gentle by nature, but if provoked, they can quickly turn a situation around. Slightly slower than regular horses, they make up for that by adapting to any terrain. They are capable of hopping from cliff to cliff, traversing snowy plains or escaping hunters. Wild capricorns are mostly seen around the gulden forest, where they regroup to feast and hibernate.</description>
 		<statBases>
 			<MoveSpeed>5.8</MoveSpeed>
 			<MarketValue>550</MarketValue>

@@ -72,7 +72,7 @@
 				<Beauty>2</Beauty>
 			</statOffsets>
 			<color>(174,154,118)</color>
-			<!-- <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>-->
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
 			<stuffAdjective>aurelian stone</stuffAdjective>

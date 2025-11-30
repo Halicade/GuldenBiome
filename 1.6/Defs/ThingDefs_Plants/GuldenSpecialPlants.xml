@@ -4,7 +4,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>Plant_GuldenAmbrosia</defName>
 		<label>Gulden ambrosia bush</label>
-		<description>A rare wild bush which yields the ambrosia fruit. Ambrosia fruit is delicious and produces a drug-like mood boost. Ambrosia cannot be farmed, which makes wild ambrosia groves very valuable.\n\nIts rarity, beauty, and desirability are why ambrosia was named after the food of the ancient Greek gods.</description>
+		<description>A rare wild bush which yields the gulden ambrosia fruit. Gulden Ambrosia fruit is delicious and produces a drug-like mood boost. It cannot be farmed, which makes wild ambrosia groves very valuable.\n\nIts rarity, beauty, and desirability are why ambrosia was named after the food of the ancient Greek gods.</description>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Nutrition>0.5</Nutrition>

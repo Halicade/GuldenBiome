@@ -21,4 +21,23 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Rat"]/race/canCrossBreedWith</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Rat"]/race</xpath>
+			<value>
+				<canCrossBreedWith>
+				
+				</canCrossBreedWith>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Rat"]/race/canCrossBreedWith</xpath>
+		<value>
+			<li>Gulden_Rat</li>
+		</value>
+	</Operation>
+
 </Patch>
