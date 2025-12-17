@@ -42,11 +42,11 @@
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 	  </ThingDef>
-	
+	-->
 	  <ThingDef ParentName="SculptureBase">
-		<defName>SculptureMonk</defName>
+		<defName>Gulden_SculptureMonk</defName>
 		<label>Monk sculpture</label>
-		<description>A person-sized piece of material sculpted into an artistic form.</description>
+		<description>A large sculpture of a monk.</description>
 		<castEdgeShadows>true</castEdgeShadows>
 		<graphicData>
 		  <graphicClass>Graphic_Random</graphicClass>
@@ -55,6 +55,7 @@
 		  <drawOffset>0,0,1</drawOffset>
 		</graphicData>
 		<fillPercent>0.5</fillPercent>
+		  <minifiedDrawScale>0.5</minifiedDrawScale>
 		<rotatable>false</rotatable>
 		<altitudeLayer>Blueprint</altitudeLayer>
 		<statBases>
@@ -70,12 +71,12 @@
 		  <li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
-	  </ThingDef> -->
+	  </ThingDef>
 	
 	<ThingDef ParentName="SculptureBase">
 		<defName>SculpturePiller</defName>
-		<label>Piller sculpture</label>
-		<description>A person-sized piece of material sculpted into an artistic form.</description>
+		<label>pillar sculpture</label>
+		<description>A huge impassable pillar capable of holding up a roof.</description>
 		<castEdgeShadows>true</castEdgeShadows>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -86,11 +87,12 @@
 		<fillPercent>0.5</fillPercent>
 		<rotatable>false</rotatable>
 		<altitudeLayer>Blueprint</altitudeLayer>
+        <minifiedDrawScale>0.5</minifiedDrawScale>
 		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Mass>7</Mass>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Mass>10</Mass>
 			<Beauty>100</Beauty>
-			<WorkToMake>30000</WorkToMake>         <!--  30000 -->
+			<WorkToMake>30000</WorkToMake>
 			<!-- <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance> -->
 		</statBases>
 		<holdsRoof>true</holdsRoof>
@@ -102,11 +104,11 @@
 		<costStuffCount>100</costStuffCount>
 	</ThingDef>
 	
-	<!-- <ThingDef ParentName="SculptureBase" MayRequire="SirMashedPotato. ESCP. Sload" >
-	  <defName>SculptureSload</defName>
+	<ThingDef ParentName="SculptureBase">
+	  <defName>Gulden_SculptureSload</defName>
 	  <label>Sload sculpture</label>
-	  <description>A person-sized piece of material sculpted into an artistic form.</description>
-	  <castEdgeShadows>true</castEdgeShadows>
+	  <description>A sculpture of a Sload. An emotionless race of slug-like creatures. The Sload are despised by almost everyone due to their tendency towards necromancy.</description>
+	  <castEdgeShadows>false</castEdgeShadows>
 	  <graphicData>
 		<graphicClass>Graphic_Random</graphicClass>
 		<texPath>Art/Med/SculptureSload</texPath>
@@ -114,6 +116,7 @@
 		<drawOffset>0,0,2.07</drawOffset>
 	  </graphicData>
 	  <fillPercent>0.5</fillPercent>
+		<minifiedDrawScale>0.5</minifiedDrawScale>
 	  <size>(3,3)</size>
 	  <rotatable>false</rotatable>
 	  <altitudeLayer>Blueprint</altitudeLayer>
@@ -129,9 +132,9 @@
 		<li>Woody</li>
 		<li>Stony</li>
 	  </stuffCategories>
-	  <costStuffCount>1</costStuffCount>
+	  <costStuffCount>100</costStuffCount>
 	</ThingDef>
- 
+ <!--
 	<ThingDef ParentName="SculptureBase">
 	  <defName>SculptureGrand</defName>
 	  <label>grand sculpture</label>

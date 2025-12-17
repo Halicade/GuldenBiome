@@ -273,7 +273,7 @@
 	
 	<ThingDef ParentName="GuldenHealrootBase">
 		<defName>Plant_GuldenHealroot</defName>
-		<label>Gulde healroot</label>
+		<label>Gulden healroot</label>
 		<description>A slow-growing plant which yields herbal medicine when harvested. Sowing and harvesting healroot are both very labor-intensive tasks because of its delicate shoots.\n\nHealroot was selectively bred for centuries by settlers. It is sometimes also called &quot;healer's hand&quot; by tribespeople - a nickname it owes to its five major medicinal virtues.</description>
 		<plant>
 			<growDays>7</growDays>
