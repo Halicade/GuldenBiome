@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/IncidentDef[defName="Ambush"]/mtbDaysByBiome</xpath>
+        <value>
+            <TemperateGuldenForest>20</TemperateGuldenForest>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/IncidentDef[defName="ManhunterAmbush"]/mtbDaysByBiome</xpath>
+        <value>
+            <TemperateGuldenForest>20</TemperateGuldenForest>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/IncidentDef[defName="CaravanMeeting"]/mtbDaysByBiome</xpath>
+        <value>
+            <TemperateGuldenForest>10</TemperateGuldenForest>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/IncidentDef[defName="CaravanDemand"]/mtbDaysByBiome</xpath>
+        <value>
+            <TemperateGuldenForest>10</TemperateGuldenForest>
+        </value>
+    </Operation>
+
+</Patch>
