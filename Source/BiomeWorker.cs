@@ -16,7 +16,7 @@ public class BiomeWorker : BiomeWorker_TemperateForest
             return -100;
         }
 
-        // Only 2 because otherwise it would cover other biomes instead of just temperate forest
-        return score + 2;
+        // Only 1 because otherwise it would cover other biomes instead of just temperate forest
+        return score + 1.5f;
     }
 }
