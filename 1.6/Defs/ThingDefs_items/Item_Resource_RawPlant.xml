@@ -49,7 +49,7 @@
 			<joy>0.10</joy>
 			<joyKind>Gluttonous</joyKind>
 			<tasteThought></tasteThought>
-			<foodType>VegetableOrFruit</foodType>
+			<foodType>Fungus</foodType>
 		</ingestible>
 	</ThingDef>
 
