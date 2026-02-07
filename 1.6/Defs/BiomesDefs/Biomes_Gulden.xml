@@ -50,6 +50,7 @@
 		<foragedFood>GuldenRawBerries</foragedFood>
 		<wildPlantRegrowDays>20</wildPlantRegrowDays>
 		<maxFishPopulation>540</maxFishPopulation>
+		<riverbankSizeRange>4~8</riverbankSizeRange>
 		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
 			<freshwater_Common>
 				<Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon>
