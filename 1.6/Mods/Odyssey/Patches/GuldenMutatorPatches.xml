@@ -94,9 +94,16 @@
 			<li>TemperateGuldenForest</li>
 		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="WildPlants"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="HotSprings"]/biomeWhitelist</xpath>
 		<value>
 			<li>TemperateGuldenForest</li>
 		</value>
