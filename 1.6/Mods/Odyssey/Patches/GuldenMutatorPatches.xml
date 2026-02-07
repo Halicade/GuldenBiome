@@ -66,6 +66,20 @@
 			<li>TemperateGuldenForest</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="CoastalAtoll"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Sandy"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[@Name="BaseAncientVentMut"]/biomeWhitelist</xpath>
@@ -73,9 +87,16 @@
 			<li>TemperateGuldenForest</li>
 		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="Fertile"]/biomeWhitelist</xpath>
+		<value>
+			<li>TemperateGuldenForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Muddy"]/biomeWhitelist</xpath>
 		<value>
 			<li>TemperateGuldenForest</li>
 		</value>

@@ -18,6 +18,7 @@
 		<li IfModActive="Neronix17.Outland.MoreFloors">1.6/Mods/Outlands</li>
 		<li IfModActive="VanillaExpanded.VFEArchitect">1.6/Mods/VFE_Architect</li>
         <li IfModActive="Ludeon.Rimworld.Odyssey">1.6/Mods/Odyssey</li>
+		<li IfModActive="vanillaexpanded.vexploratione">1.6/Mods/VEE_Landmarks</li>
 		<li IfModActive="vanillaexpanded.vgeneticse">1.6/Mods/GeneticsExpanded</li>
 		<li IfModActive="vanillaexpanded.vcef" IfModNotActive="Ludeon.Rimworld.Odyssey">1.6/Mods/FishingExpanded</li>
         <li IfModActive="IH.Clean.Textures">1.6/Mods/CleanTextures</li>

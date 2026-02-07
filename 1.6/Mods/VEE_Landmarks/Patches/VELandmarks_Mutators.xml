@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--
+    TemperateGuldenForest
+    -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="VEE_NocturnalFauna"]/biomeWhitelist</xpath>
+        <value>
+            <li>TemperateGuldenForest</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="VEE_DryRiver"]/biomeWhitelist</xpath>
+        <value>
+            <li>TemperateGuldenForest</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="VEE_BurnedForest"]/biomeWhitelist</xpath>
+        <value>
+            <li>TemperateGuldenForest</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="VEE_RelictDelta"]/biomeWhitelist</xpath>
+        <value>
+            <li>TemperateGuldenForest</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="VEE_AnimaSoils"]/biomeWhitelist</xpath>
+        <value>
+            <li>TemperateGuldenForest</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="VEE_AnimaSoils_Coast"]/biomeWhitelist</xpath>
+        <value>
+            <li>TemperateGuldenForest</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="VEE_JadeChunks"]/biomeWhitelist</xpath>
+        <value>
+            <li>TemperateGuldenForest</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="VEE_AnimaFlora"]/biomeWhitelist</xpath>
+        <value>
+            <li>TemperateGuldenForest</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="VEE_AnimaFauna"]/biomeWhitelist</xpath>
+        <value>
+            <li>TemperateGuldenForest</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="VEE_PlentifulGrass"]/biomeWhitelist</xpath>
+        <value>
+            <li>TemperateGuldenForest</li>
+        </value>
+    </Operation>
+
+
+</Patch>
