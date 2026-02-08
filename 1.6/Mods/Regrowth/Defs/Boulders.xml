@@ -8,7 +8,7 @@
         </graphicData>
         <modExtensions>
             <li Class="ReGrowthCore.BoulderProperties">
-                <chunkDefToSpawn>TKKN_ChunkLava</chunkDefToSpawn>
+                <chunkDefToSpawn>ChunkAurelianStone</chunkDefToSpawn>
                 <chunksToSpawn>4~6</chunksToSpawn>
             </li>
         </modExtensions>
@@ -21,7 +21,7 @@
         </graphicData>
         <modExtensions>
             <li Class="ReGrowthCore.BoulderProperties">
-                <chunkDefToSpawn>TKKN_ChunkLava</chunkDefToSpawn>
+                <chunkDefToSpawn>ChunkAurelianStone</chunkDefToSpawn>
                 <chunksToSpawn>2~3</chunksToSpawn>
             </li>
         </modExtensions>
