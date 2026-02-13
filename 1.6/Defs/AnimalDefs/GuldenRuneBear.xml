@@ -142,7 +142,7 @@
 	<ThingDef ParentName="RuneBear">
 		<defName>GuldenRuneBear</defName>
 		<label>Gulden Rune Bear</label>
-		<description>Massive omnivorous bear-like creature known for roaming the Gulden Forest. This ancient beast is very territorial and will not hesitate to shred anything on its path once enraged, or when hunting. Its beautiful, incredibly durable pelt marks it as a valuable prize for the empire, which regularly hunts them down. Its golden razor-sharp claws fetches a good price on the market. Old tribes used to venerate such a creature, saying it was a lesser divinity taking animal form to hunt those who have angered the gods.</description>
+		<description>Massive omnivorous bear-like creature known for roaming the Gulden Forest. This ancient beast is very territorial and will not hesitate to shred anything in its path once enraged, or when hunting. Their beautiful, incredibly durable pelt and golden razor-sharp claws marks them as a valuable prize for the empire, which regularly hunts them down. Their claws also fetch a good price on the market. Old tribes used to venerate such a creature, saying it was a lesser divinity taking animal form to hunt those who have angered the gods.</description>
 		<statBases>
 			<Wildness>0.80</Wildness>
 		</statBases>
